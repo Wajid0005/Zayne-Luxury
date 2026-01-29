@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYNÉ | French Luxury Beauty</title>
+    <meta name="description" content="Experience French luxury with ZAYNÉ. Antigravity beauty for the modern muse.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glass-background"></div>
+
+    <!-- Decorative Elements -->
+    <div class="decorative-elements">
+        <span class="heart-sticker" style="top: 10%; left: 15%;">💖</span>
+        <span class="heart-sticker" style="top: 60%; right: 10%;">✨</span>
+        <span class="balloon-sticker" style="top: 30%; left: 5%;">🎈</span>
+        <span class="balloon-sticker" style="top: 75%; right: 20%;">🎀</span>
+        <span class="sparkle" style="top: 45%; left: 8%;"></span>
+        <span class="sparkle" style="top: 20%; right: 15%;"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">ZAYNÉ</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="#editorial">L'Éclat</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="cart-icon" id="cartToggle">
+                🛍️
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">Your bag is empty</div>
+        </div>
+
+        <div class="coupon-section" id="couponSection" style="display: none;">
+            <input type="text" id="couponInput" placeholder="Enter coupon code" class="coupon-input">
+            <button class="apply-coupon-btn" id="applyCouponBtn">Apply</button>
+            <div class="coupon-message" id="couponMessage"></div>
+        </div>
+
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <span id="subtotalPrice">$0</span>
+            </div>
+            <div class="discount-row" id="discountRow" style="display: none;">
+                <span>Discount</span>
+                <span id="discountAmount">-$0</span>
+            </div>
+            <div class="total-row">
+                <span>Total</span>
+                <span id="totalPrice">$0</span>
+            </div>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" style="display: none;">Checkout</button>
+    </div>
+
+    <main>
+        <!-- Hero Section with Logo Center -->
+        <section id="home" class="hero-logo">
+            <div class="hero-logo-container fade-in">
+                <div class="logo-center">ZAYNÉ</div>
+                <p class="tagline">L'Éclat Parisien</p>
+                <div class="floating-products-orbit">
+                    <img src="assets/images/lipstick.png" alt="Lipstick" class="orbit-product orbit-1">
+                    <img src="assets/images/gloss.png" alt="Gloss" class="orbit-product orbit-2">
+                    <img src="assets/images/kajal.png" alt="Kajal" class="orbit-product orbit-3">
+                    <img src="assets/images/eyeliner.png" alt="Eyeliner" class="orbit-product orbit-4">
+                </div>
+                <a href="#collection" class="btn-glass">Découvrir la Collection</a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="collection" class="showcase">
+            <div class="section-header fade-on-scroll">
+                <h2>The Levitate Series</h2>
+                <p>Our signature collection</p>
+            </div>
+
+            <div class="product-grid" id="featuredGrid">
+                <!-- Featured products loaded by home.js -->
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="products.html" class="btn-glass">Explore Full Collection</a>
+            </div>
+        </section>
+
+        <!-- ZAYNÉ Muses (UGC Section) -->
+        <section id="editorial" class="ugc-section">
+            <div class="section-header fade-on-scroll">
+                <h2>ZAYNÉ Muses</h2>
+                <p>Real radiance using the Levitate Collection</p>
+            </div>
+
+            <div class="ugc-grid">
+                <div class="ugc-card fade-on-scroll">
+                    <img src="assets/editorial/model-1.png" alt="Parisian Radiance">
+                    <div class="editorial-overlay">
+                        <h3>Morning Ritual</h3>
+                        <p>"The Foundation feels like nothing at all."</p>
+                    </div>
+                </div>
+                <div class="ugc-card large fade-on-scroll delay-1">
+                    <img src="assets/editorial/model-2.png" alt="Riviera Glow">
+                    <div class="editorial-overlay">
+                        <h3>Golden Hour</h3>
+                        <p>"My skin has never looked this happy."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content fade-on-scroll">
+                <h2>Notre Philosophie</h2>
+                <p>ZAYNÉ embodies the essence of French luxury — where timeless elegance meets modern innovation. Born
+                    in the heart of Paris, our antigravity collection defies convention with weightless formulas that
+                    deliver extraordinary impact.</p>
+                <p>Each product is a testament to our commitment to artisanal craftsmanship and cutting-edge beauty
+                    science. From the sun-drenched shores of the French Riviera to the chic boulevards of Paris, ZAYNÉ
+                    captures the spirit of French femininity.</p>
+                <p>Discover beauty without boundaries. Discover ZAYNÉ.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ZAYNÉ</div>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 ZAYNÉ Paris. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

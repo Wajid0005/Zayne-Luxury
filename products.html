@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ZAYNÉ French Luxury Beauty</title>
+    <meta name="description" content="Explore our complete collection of French luxury beauty products.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glass-background"></div>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ZAYNÉ</a></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="index.html#editorial">L'Éclat</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="cart-icon" id="cartToggle">
+                🛍️
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">Your bag is empty</div>
+        </div>
+
+        <div class="coupon-section" id="couponSection" style="display: none;">
+            <input type="text" id="couponInput" placeholder="Enter coupon code" class="coupon-input">
+            <button class="apply-coupon-btn" id="applyCouponBtn">Apply</button>
+            <div class="coupon-message" id="couponMessage"></div>
+        </div>
+
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <span id="subtotalPrice">$0</span>
+            </div>
+            <div class="discount-row" id="discountRow" style="display: none;">
+                <span>Discount</span>
+                <span id="discountAmount">-$0</span>
+            </div>
+            <div class="total-row">
+                <span>Total</span>
+                <span id="totalPrice">$0</span>
+            </div>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" style="display: none;">Checkout</button>
+    </div>
+
+    <main style="padding-top: 80px;">
+        <!-- Categories Section -->
+        <section id="collection" class="categories-section">
+            <div class="section-header fade-on-scroll">
+                <h2>Our Complete Collection</h2>
+                <p>Discover 50 products across 10 curated categories</p>
+            </div>
+
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="lipsticks">💄 Lips</button>
+                <button class="category-btn" data-category="eyemakeup">👁️ Eyes</button>
+                <button class="category-btn" data-category="facemakeup">✨ Face</button>
+                <button class="category-btn" data-category="koreanskincare">🌸 K-Beauty</button>
+                <button class="category-btn" data-category="sunscreen">☀️ Sun Care</button>
+                <button class="category-btn" data-category="moisturizers">💧 Moisture</button>
+                <button class="category-btn" data-category="cleansers">🧴 Cleanse</button>
+                <button class="category-btn" data-category="serums">💎 Serums</button>
+                <button class="category-btn" data-category="tools">🖌️ Tools</button>
+                <button class="category-btn" data-category="fragrance">🌹 Fragrance</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ZAYNÉ</div>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 ZAYNÉ Paris. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ZAYNÉ French Luxury Beauty</title>
+    <meta name="description"
+        content="Get in touch with ZAYNÉ. Questions, collaborations, or just saying hello — we're here.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="glass-background"></div>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ZAYNÉ</a></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="index.html#editorial">L'Éclat</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <h1 class="fade-in-up">Let's stay connected.</h1>
+            <p class="fade-in-up delay-1">Questions, collaborations, or just saying hello — we're here.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-card fade-in-up delay-2">
+                <div class="contact-section">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+916290409878">+91 6290409878</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">General Enquiries</span>
+                        <a href="mailto:005wajid@gmail.com">005wajid@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Business & Collaborations</span>
+                        <a href="mailto:i.wajid@op.iitg.ac.in">i.wajid@op.iitg.ac.in</a>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Connect</h3>
+                    <div class="social-grid">
+                        <a href="https://x.com/005wajid" target="_blank" rel="noopener">X (Twitter)</a>
+                        <a href="https://www.linkedin.com/in/wajid-iqbal-629770327/" target="_blank"
+                            rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/dashboard" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.kaggle.com/reeno005" target="_blank" rel="noopener">Kaggle</a>
+                        <a href="https://www.youtube.com/@iqbal_bhaii/featured" target="_blank"
+                            rel="noopener">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-footer-note fade-in-up delay-3">
+                <p>ZAYNÉ is built on clarity, care, and quiet confidence.</p>
+                <p>Every message is read with intention.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ZAYNÉ</div>
+            <div class="social-links">
+                <a href="mailto:005wajid@gmail.com">005wajid@gmail.com</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 ZAYNÉ Paris. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
